@@ -6,8 +6,11 @@
 
 (when (and (eq system-type 'darwin) (display-graphic-p))
   (set-fontset-font
-     (frame-parameter nil 'font)
-        'han
-           (font-spec :family "Hiragino Sans GB")))
+   (frame-parameter nil 'font)
+   'han
+   (font-spec :family "Hiragino Sans GB")))
+
+;;; for line spacing
+(setq-default line-spacing 0.3)
 
 (provide 'init-local)
