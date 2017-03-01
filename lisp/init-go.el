@@ -18,7 +18,7 @@
                           (company-mode)))
 
 (add-hook 'go-mode-hook (lambda ()
-                          (setq tab-width 2)))
+                          (setq tab-width 4)))
 
 (setq gofmt-command "goimports")
 
